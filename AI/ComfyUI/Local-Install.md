@@ -6,25 +6,15 @@ Visit the official ComfyUI GitHub [releases](https://github.com/comfyanonymous/C
 
 Use a tool like 7-Zip to extract the archive to an easy-to-remember location, such as `C:\comfyui`.
 
-The Node Manager is a powerful extension that simplifies to install, remove, enable, or disable custom nodes directly from within ComfyUI. It also provides a central hub to access tools, updates, and community resources, helping streamline your workflow.
-
-Using File Explorer, navigate to the `C:\comfyui\ComfyUI_windows_portable\ComfyUI\custom_nodes` folder. In the File Explorer address bar, type `cmd` and press Enter to open a terminal in that folder.
-
-After typing cmd in the File Explorer address bar and pressing Enter, a terminal window will open directly in the current folder. Next, type the following command and press enter:
-
-git clone https://github.com/Comfy-Org/ComfyUI-Manager.git
-
-When you press Enter, this command will clone the GitHub repository directly into the ComfyUI folder structure.
-
-Once the cloning process is complete, you can safely close the terminal window. With the Node Manager installed, you’re now ready to manage a wide variety of custom nodes — unlocking new tools and possibilities within ComfyUI.
-
-Go back to `C:\comfyui` and double-click `run_nvidia_gpu.bat` to start the ComfyUI application.
-
 ## ComfyUI-Manager
+
+The Node Manager is a powerful extension that simplifies to install, remove, enable, or disable custom nodes directly from within ComfyUI. It also provides a central hub to access tools, updates, and community resources, helping streamline your workflow.
 
 1. Go to ComfyUI/custom_nodes dir in terminal (cmd)
 2. git clone https://github.com/ltdrdata/ComfyUI-Manager comfyui-manager
 3. Restart ComfyUI
+
+Go back to `C:\comfyui` and double-click `run_nvidia_gpu.bat` to start the ComfyUI application.
 
 ## Model Manager
 
