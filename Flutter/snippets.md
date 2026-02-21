@@ -1,16 +1,33 @@
 # Create Flutter Project
 
 ```bash
-PS>flutter create --project-name micard --org net.mumcu --platforms=android MiCard
+flutter create --project-name micard --org net.mumcu --platforms=android MiCard
+
+
 ```
 
 
 
 
+
+Why use Super Parameters?
+Before this update, every single widget you created had to manually "pass" the key up to the parent StatelessWidget or StatefulWidget. It was a lot of typing for something that happens in every single widget.
+
+super.key tells Dart: "Take the key argument and automatically pass it to the constructor of the class I'm extending."
+
+When to use them
+You should use super.parameterName whenever you are just passing a value directly to the parent class without changing it. The most common use case is super.key, but it works for any property in a class hierarchy.
+
+
+
+
+dart pub deps --unused
+
+
 flutter clean
 flutter pub get
 flutter run
-
+flutter pub add package_name
 
 flutter config --android-sdk "C:\Mobile\android-sdk"
 Add to Path: C:\Mobile\android-sdk\platform-tools
