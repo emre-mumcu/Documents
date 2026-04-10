@@ -7,6 +7,37 @@ git branch -M main
 git remote add origin https://github.com/***.git
 git push -u origin main
 
+
+# Best practice (recommended)
+
+Instead of manual echo command, use:
+
+git config --global credential.helper manager
+
+Then Git will:
+
+Prompt you once
+Store securely via OS vault
+Avoid exposing token in command history
+
+
+# Even better: use GitHub CLI
+
+[Using GitHub CLI](https://cli.github.com/):
+
+gh auth login
+
+👉 This is the safest and most modern method:
+
+OAuth-based login
+No manual token handling
+Safer token lifecycle
+
+NOTE: If you select token, token must have `repo (Full control of private repositories)` and `read:org`
+
+
+
+
 # Git global configuration
 
 ```yml
