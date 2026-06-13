@@ -94,6 +94,22 @@ flutter devices
 flutter clean
 flutter pub get
 
+Specify organization (for package name):
+flutter create --org com.example my_app
+
+Create only specific platforms:
+flutter create --platforms=android,ios my_app
+
+Create with a specific template:
+flutter create --template=app my_app
+
+Other templates:
+module
+plugin
+package
+
+C:\Dev>flutter create --org net.mumcu.demologin --platforms=android demologin
+
 ## Run your app on the web
 
 While Flutter apps can run on many platforms, try running your new app on the web.
