@@ -1,3 +1,40 @@
+# Update
+
+```powershell
+
+# 1. Create Key
+ssh-keygen -t ed25519 -C "Key-Name"
+
+# C:\Users\UserName\.ssh\id_ed25519
+# id_ed25519        # Private key (keep secret)
+# id_ed25519.pub    # Public key (share this one)
+
+type $env:USERPROFILE\.ssh\id_ed25519.pub
+
+# ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAI.... Key-Name
+
+# 2. Update key to the Server
+# Open Terminal & connect to the server (SSH or Console)
+# Run the following:
+
+mkdir -p ~/.ssh
+
+chmod 700 ~/.ssh
+
+nano ~/.ssh/authorized_keys
+
+# Paste the key at the bootom:
+
+chmod 600 ~/.ssh/authorized_keys
+
+chown -R $USER:$USER ~/.ssh
+
+sudo systemctl restart ssh
+```
+
+
+
+
 # How To Configure SSH Key-Based Authentication on a Linux Server
 
 SSH, or secure shell, is an encrypted protocol used to administer and communicate with servers. 
