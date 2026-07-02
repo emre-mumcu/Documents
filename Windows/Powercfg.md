@@ -2,6 +2,10 @@
 
 You need to run these commands on an elevated terminal.
 
+```powershell
+Start-Process powershell -Verb runAs
+```
+
 Disable hibernation completely: 
 	* Turn off the hibernation feature
 	* Delete the hiberfil.sys file (often several GB in size)
