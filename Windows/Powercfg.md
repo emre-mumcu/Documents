@@ -1,5 +1,7 @@
 # Windows Power Configuration Settings
 
+You need to run these commands on an elevated terminal.
+
 Disable hibernation completely: 
 	* Turn off the hibernation feature
 	* Delete the hiberfil.sys file (often several GB in size)
