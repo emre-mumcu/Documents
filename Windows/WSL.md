@@ -17,3 +17,10 @@ sudo apt install git
 
 wsl --list --verbose
 wsl --shutdown
+
+
+wsl --list --verbose
+
+wsl --install -d Ubuntu
+
+wsl --unregister Ubuntu

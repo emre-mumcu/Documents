@@ -1,3 +1,13 @@
+
+ssh root@ip -p port
+
+scp -P port C:\path\file.zip root@ip:/shared/
+
+
+systemctl stop kestrel-nordeviaweb.service
+
+unzip nordeviaweb.zip -d /inetpub/
+
 # Update
 
 ```powershell

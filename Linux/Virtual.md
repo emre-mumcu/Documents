@@ -1,3 +1,12 @@
+sudo apt install ffmpeg
+
+sudo apt update
+sudo apt install open-vm-tools open-vm-tools-desktop -y
+sudo reboot
+
+systemctl status open-vm-tools
+
+
 # Chrome
 
 You can download the latest version of Google Chrome from their official website. For this, you can use the command-line with wget:

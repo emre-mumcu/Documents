@@ -1,0 +1,8 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\Classes\*\shell\ShowSHA256]
+@="SHA256"
+"Icon"="powershell.exe"
+
+[HKEY_CURRENT_USER\Software\Classes\*\shell\ShowSHA256\command]
+@="powershell.exe -ExecutionPolicy Bypass -File \"C:\\Users\\Emre\\.scripts\\get-file-hash-256.ps1\" \"%1\""
