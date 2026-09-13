@@ -3,7 +3,7 @@
 You need to run these commands on an elevated terminal.
 
 ```powershell
-Start-Process powershell -Verb runAs
+Start-Process wt -Verb runAs
 ```
 
 Disable hibernation completely: 
